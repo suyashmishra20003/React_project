@@ -1,0 +1,330 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@200;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Mulish", sans-serif;
+  /* background-color: rgb(247, 244, 238); */
+  background-color: white;
+}
+/* --------------------card css------------------ */
+.card_button {
+  border: none;
+  border-radius: 20px;
+  background-color: white;
+  padding: 10px 30px;
+  text-decoration: none;
+  color: steelblue;
+  font-weight: bolder;
+  border-bottom: 5px solid steelblue;
+  transition: 0.5s;
+}
+.card_button:hover {
+  background-color: #3498db;
+  color: white;
+  text-decoration: none;
+}
+/* ---------------Navbar------------- */
+nav {
+  /* background-color: rgb(206, 206, 206);
+   */
+  display: flex;
+  background-color: rgb(68, 184, 230);
+}
+.nav_items {
+  background-color: rgb(68, 184, 230);
+}
+
+.nav_heading {
+  font-family: "Dancing Script", cursive;
+  background-color: rgb(68, 184, 230);
+  font-weight: bolder;
+  /* color: rgb(130, 115, 224); */
+  /* color: rgb(214, 3, 214); */
+  color: white;
+  padding-left: 50px;
+  padding-top: 10px;
+  font-size: 3.2rem;
+}
+.nav_link {
+  margin: 10px;
+  text-decoration: none;
+  color: black;
+  font-size: 1.2rem;
+  font-weight: normal;
+  background-color: rgb(68, 184, 230);
+}
+.nav_link:focus {
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  border-bottom: 5px solid purple;
+  font-size: 2rem;
+}
+.nav_link:hover {
+  text-decoration: none;
+  color: white;
+}
+
+/* ----------------------Home------------------ */
+.home_div {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.home_div h1 {
+  font-weight: bold;
+}
+.home_div strong {
+  color: #fd7e14;
+  background-color: white;
+}
+.home_image {
+  height: 500px;
+  width: 500px;
+
+  animation: 5s infinite alternate-reverse move; /* alternate-reverse */
+}
+@keyframes move {
+  50% {
+    margin-bottom: 30px;
+  }
+  100% {
+    margin-top: 30px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .home_image {
+    height: 250px;
+    width: 250px;
+  }
+  .home_div {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.home_btn {
+  border: 2px solid steelblue;
+  border-radius: 20px;
+  background-color: white;
+  color: steelblue;
+  padding: 10px;
+  text-decoration: none;
+  color: steelblue;
+  transition: 0.5s;
+}
+.home_btn:hover {
+  background-color: #3498db;
+  color: white;
+  text-decoration: none;
+}
+/* ----------------------About Page--------------------- */
+
+/* /////header section//// */
+@media only screen and (max-width: 300px) {
+  .about_header_section {
+    display: flex;
+    flex-direction: column;
+  }
+  .about_header_image {
+    width: 50px;
+    height: 50px;
+  }
+}
+.about_header_section {
+  width: 100vw;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  background-color: #b6e5ec;
+  justify-content: space-around;
+}
+.about_header_content {
+  background-color: #b6e5ec;
+}
+.about_header_content h1 {
+  color: #fd7e14;
+  font-weight: bold;
+}
+.about_header_content h1,
+h3 {
+  background-color: #b6e5ec;
+}
+.about_header_link {
+  border: 2px solid steelblue;
+  border-radius: 20px;
+  background-color: white;
+  color: steelblue;
+  padding: 10px 30px;
+  text-decoration: none;
+  color: steelblue;
+  transition: 0.5s;
+}
+.about_header_link:hover {
+  background-color: #3498db;
+  color: white;
+  text-decoration: none;
+}
+.about_header_image {
+  height: 400px;
+  width: 400px;
+}
+/* /////intro section//// */
+.intro_section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.intro_section h1 {
+  text-align: center;
+  font-weight: bold;
+}
+/* ///////Expertice Section////// */
+
+@media screen and (max-width: 500px) {
+  .expertise_section_buttons {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(68, 184, 230);
+  }
+  .expertise_button {
+    margin: 20px;
+  }
+  .expertise_section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .expertise_section ul {
+    font-size: 16px;
+  }
+  .expertise_section h1 {
+    font-size: 28px;
+  }
+  .process_section_div {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.expertise_section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+  background-color: #b6e5ec;
+}
+.expertise_section h1 strong {
+  color: #fd7e14;
+  font-weight: bold;
+}
+.expertise_section h1,
+strong,
+ul,
+li {
+  background-color: #b6e5ec;
+}
+.expertise_section ul {
+  font-size: 1.5rem;
+}
+.expertise_section h1 {
+  font-size: 3.5rem;
+}
+
+.expertise_button {
+  border: 2px solid steelblue;
+  border-radius: 20px;
+  background-color: white;
+  color: steelblue;
+  padding: 10px 30px;
+  text-decoration: none;
+  color: steelblue;
+  transition: 0.5s;
+}
+.expertise_button:hover {
+  background-color: #3498db;
+  color: white;
+  text-decoration: none;
+}
+/* ------------process Section--------------- */
+.process_section {
+  padding: 50px;
+  display: flex;
+}
+.process_section video {
+  width: 40%;
+  height: 40%;
+}
+.process_section h1 strong {
+  background-color: white;
+  color: #fd7e14;
+}
+/* -------------------service section------------------------------------- */
+.service_section {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.MuiCard-root {
+  margin-top: 50px;
+  border: 5px solid rgb(207, 202, 202);
+  width: 25vw;
+  height: 72vh;
+}
+
+@media only screen and (max-width: 600px) {
+  .service_section {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    align-items: center;
+    justify-content: center;
+  }
+  .MuiCard-root {
+    margin-top: 50px;
+    border: 5px solid rgb(207, 202, 202);
+    width: 65vw;
+    height: 65vh;
+  }
+}
+/* ----------------------Contact page-------------------------- */
+.contact_section_form {
+  display: flex;
+  flex-direction: column;
+}
+.contact_fields {
+  width: 50vw;
+  border: none;
+  border-bottom: 2px solid tomato;
+  margin-bottom: 50px;
+}
+
+.contact_fields:focus {
+  outline: none;
+}
+.form_div {
+  width: 90vw;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.contact_section h1 {
+  text-align: center;
+  margin: 30px 0 30px 0;
+}
+.msg_field {
+  width: 50vw;
+  height: 20vh;
+}
+.contact_section label {
+  font-weight: bold;
+  margin-bottom: 15px;
+}
